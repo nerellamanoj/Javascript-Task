@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formvalidations</title>
+    <style>
+        
+        span{
+            display: none;
+        }
+    </style>
+
+  </head>
+  
+  <body>
+    <div id="manoj">
+        <form action="">
+            <input type="text" placeholder="username" /><br />
+            <input type="text" placeholder="password" /><br />
+            <input type="text" placeholder="confirm password"><br>
+
+            <span>please fill details</span><br>
+      
+            <input type="submit" />
+          </form>
+      
+    </div>
+    <script>
+      console.log(document.forms);
+
+      var d = document.forms;
+      console.log(d[0]);
+
+      var arr=[];
+      d[0].addEventListener("submit", function (e) {
+
+        
+        e.preventDefault();
+
+        var obj = {
+          username: e.target[0].value,
+          password: e.target[1].value,
+          confirmpassword:e.target[2].value 
+        };
+        if(obj.username.length==0 && obj.password==0){
+           var spn=document.getElementsByTagName("span");
+           
+      spn[0].style.display="inline";
+      spn[0].style.color="red"
+           
+        }
+
+        if(obj.password === obj.password){
+            alert("password should be match")
+        }
+        
+        arr.push(obj);
+        console.log(arr);
+
+        localStorage.setItem("users",JSON.stringify(arr))
+
+        e.target[0].value = "";
+        e.target[1].value = "";
+        e.target[2].value = "";
+      });
+
+        
+    </script>
+  </body>
+</html>

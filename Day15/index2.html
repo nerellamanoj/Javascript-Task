@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closers</title>
+  </head>
+  <body>
+    <img src="" alt="">
+    <script>
+      // var is different in forloop it iterates 4 times when comes to let 0,1,2,3 will console
+      // for (var i = 0; i < 4; i++) {
+      //   setTimeout(() => {
+      //     console.log(i);
+      //   }, 1000);
+      // }
+
+      // closers
+
+      //       function manoj() {
+      //         var a = 100;
+
+      //         return function  () {
+      //           return a + 20;
+      //         };
+
+      //       }
+      //    var c= manoj()();
+
+      // console.log(c);
+      // orginal function with multiple arguments
+//       function add(x, y) {
+//         return x + y;
+//       }
+//     //   curried version of add functuon
+//       function curriedadd(x) {
+//         return function (y) {
+//           return x + y;
+//         };
+//       }
+//       var c= curriedadd(10)(5); 
+      
+// console.log(c);
+
+
+// lexical scope
+// let c=10;
+// function a(){
+    
+//     b();
+//     function b(){
+//         console.log(c);
+
+//     }
+// }
+// a();
+
+
+// orginal function with multiple arguments
+//       function add(x, y) {
+//         return x + y;
+//       }
+//     //   curried version of add functuon
+//       function curriedadd(x) {
+//         return function (y) {
+//           return x + y;
+//         };
+//       }
+//       var c= curriedadd(10)(5); 
+      
+// console.log(c);
+
+//   function manoj(a,b){
+//     return a+b;
+//   }
+//   function hasini(a){
+//     return function (b){
+//         return a+b
+
+//     }
+//   }
+//      var f=hasini(10)(5);
+//     //  console.log(f); ==== >currig concept
+
+//  function outer(){
+//     var outvar=" i am from outer function";
+
+// function inner(){
+//     console.log(outvar);
+    
+
+// }
+// return inner;
+
+//  }
+//  var a=outer();
+//  console.log(a());
+
+var imgg=document.getElementsByTagName("img")
+  var a=localStorage.getItem("image")
+imgg[0].setAttribute("src",a)
+imgg[0].style.width="300px ";
+imgg[0].style.height="300px"
+
+
+
+ 
+
+
+
+
+    </script>
+  </body>
+</html>

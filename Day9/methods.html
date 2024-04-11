@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArrayMethods</title>
+  </head>
+  <body>
+    <script>
+
+
+
+
+// for(i=65;i<=90;i++){
+//   console.log(String.fromCharCode(i));
+// }
+
+// var myArray = [1, 2, 3, 5, 4];
+// console.log(myArray.toString());
+
+// Array.prototype.buglessString = function() {
+//     return this.join(",");
+// };
+
+// var myArray=[1,2,3,4,5,8];
+
+// Array.prototype.buglessString=function(){
+//   return this.join(",");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // replace
+
+      // var a="this is manoj";
+      // console.log(a.replace("this","hi"));
+
+      // var a="THISs is manoj";
+      // console.log(a.toLowerCase());
+
+      // substring
+      // var a="thisismanojkumarnerella"
+      // console.log(a.substring(7,12));
+
+      // for(let i=0;i<10;i++){
+      //   console.log( (i+1)+  ")" + "This is manoj")
+      // }
+
+      // / charat
+
+      // var a="thisismanoj"
+      // console.log(a.charAt(10));
+      // trim
+
+      // var student="      this is manoj  "
+      // console.log(student.trimStart());
+
+      // split
+      // let manoj="this is manoj"
+      // console.log(manoj.split(" "));
+
+      // let students = ["manoj", "himaja", "hihih", "kumar"];
+
+      // students.forEach(function (hai, index) {
+      //   document.write(index + 1 + ")" + hai + "<br>");
+      // });
+
+      // let score = [10, 20, 30, 40, 50];
+
+      // score.forEach(function (manoj) {
+      //   console.log(manoj / 2);
+      // });
+
+      // for( var i=0;i<5;i++){
+      //   console.log(i);
+      // }
+
+      // if we give set timeout var and let acts different ways
+
+      // for(let i=0;i<5;i++){
+      //   setTimeout(() => {
+      //     console.log(i);
+
+      //   }, 3000);
+      // }
+
+      //  let student=["anil","manoj","surech"]
+
+      //  var newstudent=student.indexOf("himaja")
+      //  if(newstudent===-1){
+      //   student.push("himaja")
+      //  }
+      //  console.log(student);
+      //  console.log(student.indexOf("himaja"));
+
+      //  console.log(student.indexOf("manoj"));
+      //  console.log(student.indexOf("hi"));
+
+      // var a='heLLo Gguys'
+      // console.log(a.split("")[6]);
+      // console.log(a.substr(0,4));
+      // console.log(a.substring(0,4)[2]);
+      // var a='manojkkkkumar';
+
+      // console.log(a.match(/k/ig))
+      // console.log(a.includes('a'));
+      // console.log(a.split(' '));
+      // console.log(a.slice(2,6));
+      // // >exact part u want to display---
+      // console.log(a.charAt(5));
+      // console.log(a.substr(2));
+      // console.log(a.substring(1,5));
+      // console.log(a.slice(4));
+      //  string templates or string literals.
+      //   var a='manoj'
+      //   b= 'kumar'
+      //   c= 'nerella'
+      //   console.log(`hi this is good boy ${a} speaking ${b} his last kumar ${c} and his  surnam e`);
+
+      //    Arrays and arrays methods
+
+      //   addition of arrays
+      //       a=[1,2,4,5,6,7,8,]
+
+      // var c=0;
+      //       for(i=0;i<a.length;i++){
+      //         console.log(a[i]);
+      //         //  c+=a[i];
+      //          c=c+a[i];
+
+      //       }
+      // console.log(c);
+
+      // find length of Element without using length word
+
+      //  var a=[1,2,3,5,'hello',4,4,4,4,46,8,9]
+      //  for( j in a){
+      //     console.log(a);
+      //  }
+      //
+      // for in addition
+
+      // var a=[1,2,2,2,3,4,4,5,6];
+      // var c=0;
+      // for( j in a){
+      //     console.log(a[j]);
+      //        c=c+a[j]
+      // }
+      // console.log(c);
+      // var c=null;
+      // var a=[1,5,5,5,5,5,5,5,6,7,8,9,5,4,4,3,4,5,6,7,7,54,]
+      // for(j in a){
+      //     console.log(a[j]);
+
+      //     c=c+a[j];
+      // }
+      // console.log(c);
+
+      // var a=[1,2,3,4,5,6]
+      // var c=0;
+
+      // for(i=0;a[i];i++){
+      //     console.log(a[i]);
+      //     c+=a[i]
+      // }
+      // console.log(c);
+
+      // we can change parenr values because it is a mutable
+      //   var a=[12,656,97845,]
+      //   console.log(a[1]);
+      //   a[0]=2225;
+      //   console.log(a);
+      //   console.log(a[2]);
+      //   a[2]='manojkumar nerella';
+      //   console.log(a);
+      //    var a=[11,12,14,15,16,17,18]
+      //    console.log(a);
+      //    console.log(a.slice(2,5));
+
+      //    a[1]='hello';
+      //    console.log(a);
+      //    console.log(a.slice(1,5));
+
+      // splice method
+      // var a=[56,78,889,7,8,]
+      // console.log(a);
+      // console.log(a.splice(1,1,'hello','kello'));
+      // console.log(a);
+
+      // // push/ method
+      // var a=[1,2,3,5,6]
+      // a.push(22,55);
+      // console.log(a);
+      // a.pop();
+      // console.log(a);
+      // shift and unshift
+      // var a=[2,5,6,9,8,9]
+      // a.shift();a.shift();
+      // console.log(a);
+
+      // var a=[5,56,7,8,]
+      // a.unshift(22,55);a.unshift(256,789,468);
+      // console.log(a);
+
+      // var a=[1,2,3,4]
+      // console.log(a.toString(a)[4]);
+      // // console.log(a.toString(a)[2]);
+
+      // var a=['manoj',22,55,6];
+      // console.log(a[0][3]);
+
+      //   var a = [1, 2, 3, 4, 5];
+      //   var b = a.toString(a);
+      //   console.log(b);
+
+      //    join method
+
+      // var a=[1,2,3,4,4,4,4,4,,55,7,7,88]
+      // console.log(a.join('@'));
+
+      // flat method
+
+      // var a=[1,2,3,[2,3],5,6]
+
+      // // console.log(a.flat(a)[3][0]);
+      //  console.log(a.flat(a)[3][1]);
+
+      // var a=[22,'hello',55]
+      // b=[2,5,5,]
+      // console.log(a.concat(b));
+    </script>
+  </body>
+</html>

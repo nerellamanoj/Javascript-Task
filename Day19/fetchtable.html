@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fetchpractise</title>
+  </head>
+
+  <body>
+    
+    <script>
+      fetch("https://fakestoreapi.com/products", {
+        method: "get",
+      })
+        .then((data) => {
+          return data.json(); 
+        })
+        .then((data) => {
+
+
+            var a = document.createElement("table");
+      for (i = 0; i < data.length; i++) {
+        a.style.border = "2px solid black";
+
+        var b = document.createElement("tr");
+        b.style.border = "2px solid black";
+
+        var c = document.createElement("td");
+        c.innerText = data[i].id;
+        b.appendChild(c);
+        c.style.border = "2px solid black";
+
+        var c1 = document.createElement("td");
+        c1.innerText = data[i].title;
+        b.appendChild(c1);
+        c1.style.border = "2px solid black";
+
+        var c2 = document.createElement("td");
+        c2.innerText = data[i].price;
+        b.appendChild(c2);
+        c2.style.border = "2px solid black";
+
+        var c3 = document.createElement("td");
+        c3.innerText = data[i].description;
+        b.appendChild(c3);
+        c3.style.border = "2px solid black";
+
+        var c4 = document.createElement("td");
+        c4.innerText = data[i].category;
+        b.appendChild(c4);
+        c4.style.border = "2px solid black";
+
+        var c5 = document.createElement("td");
+        c5.innerText = data[i].rating.rate;
+        b.appendChild(c5);
+        c5.style.border = "2px solid black";
+
+        var c6 = document.createElement("td");
+        imgg = document.createElement("img");
+        imgg.src = data[i].image;
+        imgg.style.width = "100px";
+        b.appendChild(c6);
+        c6.appendChild(imgg);
+        c6.style.border = "2px solid black";
+
+        a.appendChild(b);
+
+        document.body.appendChild(a);
+        console.log(a);
+      }
+
+
+               
+          console.log(data);
+
+        });
+    </script>
+  </body>
+</html>

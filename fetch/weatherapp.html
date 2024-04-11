@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherinfo</title>
+  </head>
+
+  <body>
+    <form action="manoj">
+      <input type="text" placeholder="Enter your city" />
+      <input type="submit" />
+    </form>
+
+    <script>
+      var a = document.forms;
+      a[0].addEventListener("submit", function (e) {
+        e.preventDefault();
+        var city = e.target[0].value;
+
+        fetch(
+          "https://api.openweathermap.org/data/2.5/weather?q=london&appid=be513745cd174d8f00404ae69352e314",
+          {
+            method: "get",
+          }
+        )
+          .then((val) => {
+            return val.json();
+          })
+          .then((val) => {
+            console.log(val);
+          });
+      });
+    </script>
+  </body>
+</html>
